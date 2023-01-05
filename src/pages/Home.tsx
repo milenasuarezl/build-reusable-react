@@ -1,12 +1,12 @@
 import Button from "../components/Button";
 import CounterInput from "../components/CharactersCounterInput/CharactersCounterInput";
+import EmailSignup from "./EmailSignUp";
 import "./Home.css";
 
 const Home = () => {
-
-    let defaultMoods = ["Great", "Okay", "Bad"]
-    const maxLength = 100;
-
+    let defaultMoods: Array<string> = ["Great", "Okay", "Bad"]
+    const maxLength: number = 100
+    
     return(<>
         <section>
             <h1>Buttons</h1>
@@ -24,6 +24,10 @@ const Home = () => {
                 maxLength={maxLength}
                 defaults={defaultMoods}
             />
+        </section>
+        <section>
+            <h2>Email Signup UseRef</h2>
+            <EmailSignup />
         </section>
     </>);
 }

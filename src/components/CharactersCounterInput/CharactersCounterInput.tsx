@@ -9,7 +9,7 @@ interface CounterInputProps {
 
 const CounterInput: React.FC<CounterInputProps> = ({text, defaults, maxLength}) => {
 
-    const [message, setMessage ] = useState('');
+    const [message, setMessage ] = useState<string>('');
 
     const handleTexArea = (event: React.BaseSyntheticEvent) => {
         setMessage(event.target.value)
